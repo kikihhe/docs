@@ -1,12 +1,13 @@
 ---
-outline: deep
+title: 1. 学习md文档的使用 # title 只限制网站url，不限制左侧导航栏，左侧导航栏需要在 config.mts 中配置
+outline: deep # 
+sidebar: false # 加上这个之后，本md不在左侧展示
+navbar: false # 加上这个，本md不在上面展示
+lastUpdated: true # 加上这个，本md展示最后一次更新时间
 ---
 
 # Runtime API Examples
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
-
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
 
 ```md
 <script setup>
