@@ -12,8 +12,8 @@ export default defineConfig({
     outline: [2, 6], // 整个站点的md显式 2-6 级标题，可以被md内部的outline覆盖
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Java', link: '/java/1. 入门' },
-      { text: 'Go', link: '/go/1. Go 变量、常量、数据类型' } // 导航栏点击后直接进入第一个文章，不必再使用 index
+      { text: 'Java', link: '/java/' },
+      { text: 'Go', link: '/go/' } // 导航栏点击后直接进入第一个文章，不必再使用 index
     ],
     // 支持站内搜索
     search: {
@@ -27,7 +27,7 @@ export default defineConfig({
         {
           text: '', // 侧边栏的目录的 text 不展示更好看
           items: [
-            // { text: '简介', link: '/java/', collapsed: true},
+            { text: '', link: '/java/index', collapsed: true},
             {
               text: 'java基础',
               link: '/java/10. Java基础/',
@@ -63,7 +63,7 @@ export default defineConfig({
         {
           text: '',
           items: [
-            // { text: 'index', link: '/go/'},
+            { text: '', link: '/go/'},
             { text: '1. Go 变量、常量、数据类型', link: '/go/1. Go 变量、常量、数据类型' },
             { text: '2. 熟悉', link: '/go/2. 熟悉' },
             { text: '3. 精通', link: '/go/3. 精通' },
